@@ -23,15 +23,15 @@ module.exports = {
   plugins: [
     'react',
     'prettier',
+    'react-hooks',
   ],
   rules: {
     'prettier/prettier': 'error',
     'import/prefer-default-export': 'off',
     'no-console': ['error', { allow: ['tron'] }],
     'no-param-reassign': 'off',
-    'react/jsx-filename-extension': [
-      'warn',
-      { extensions: ['.jsx', '.js'] }
-    ],
+    'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
 };
